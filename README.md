@@ -4,7 +4,7 @@
 👋 Welcome to the repository for my role as a teaching assistant in web development!
 
 ## About Me
-I am Nawfal Benamor, a passionate educator and web developer committed to guiding students through the exciting world of web development.I've had the privilege of assisting numerous students in honing their coding skills.
+I am Nawfal Benamor, a passionate educator and web developer committed to guiding students through the exciting world of web development both onsite of Coding Dojo Africa (Ariana-Tunisia) and online.I've had the privilege of assisting numerous students in honing their coding skills.
 
 ## Responsibilities
 -**Guidance and Support:**
