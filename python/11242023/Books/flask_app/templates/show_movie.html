@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Show Movie</title>
+</head>
+<body>
+    <div class="d-flex justify-content-around flex-wrap">
+        <div class="col-6">
+            <h2 class="text-center">{{movie.title}}</h2>
+            <div class="card-body">
+                <h4>Title : {{ movie.title }}</h4>
+                <h4># of Pages : {{ movie.year }}</h4>
+                <h4>Film : <a href="/film/{{film.id}}">{{film.name}}</a></h4>
+                <a href="/movie/{{movie.id}}/edit"><button class="btn btn-warning">Edit</button></a>
+            </div>
+        </div>
+        <div class="col-6">
+            
+        </div>
+    </div>
+</body>
+</html>

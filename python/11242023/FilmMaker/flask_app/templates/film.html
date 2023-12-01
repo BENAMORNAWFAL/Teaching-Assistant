@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Maker</title>
+</head>
+<body>
+    <h1>New FilmMaker</h1>
+    <form action="/create/maker" method="post">
+        <label for="name">
+            Names:
+        </label>
+        <input type="text" name="name">
+        <input type="submit" value="Add Film">
+    </form>
+    <div>
+        <h2>All FilmMakers</h2>
+        {% for one_maker in all_makers %}
+        <p>{{one_maker.name}}</p>
+        {% endfor %}
+        <a href="/movies">Add Movie</a>
+    </div>
+</body>
+</html>
