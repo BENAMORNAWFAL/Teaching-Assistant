@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+</head>
+<body>
+    <h1>Welcome {{loggeduser.first_name}} </h1>
+    <a href="/pokemon/create">+Create</a>
+    <a href="/logout">Logout</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Power</th>
+                <th>HP</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for onepokemon in pokemons %}
+            <tr>
+                <td>{{onepokemon.name}}</td>
+                <td>{{onepokemon.Type}}</td>
+                <td>{{onepokemon.power}}</td>
+                <td>{{onepokemon.hp}}</td>
+                <td><a href="/edit/pokemon/{{onepokemon.id}}">Edit</a> | <a href="/show/pokemon/{{onepokemon.id}}">Show</a> | <a href="/delete/pokemon/{{onepokemon.id}}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

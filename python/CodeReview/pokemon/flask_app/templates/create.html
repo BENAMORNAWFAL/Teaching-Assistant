@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Pokémon</title>
+</head>
+<body>
+    <h1>Add pokémon</h1>
+    <form action="/create"  method="post">
+        <label for="name">Name :</label>
+        <input type="text" name="name">
+        <select name="type" >
+            <option value="electrik">Electrik</option>
+            <option value="feu">Feu</option>
+        </select>
+        <label for="power">Power :</label>
+        <input type="text" name="power">
+        <label for="hp">HP :</label>
+        <input type="text" name="hp">
+        <label for="image">Image :</label>
+        <input type="text" name="image">
+
+        <button type="submit">Create</button>
+
+    </form>
+</body>
+</html>
